@@ -14,6 +14,14 @@ class Autokbisw < Formula
     bin.install ".build/release/autokbisw"
   end
 
+  service do
+    run [opt_bin/"autokbisw"]
+    keep_alive true
+    process_type :background
+    log_path var/"log/autokbisw.log"
+    error_log_path var/"log/autokbisw.error.log"
+  end
+
   test do
     system "#{bin}/autokbisw", "--help"
   end
