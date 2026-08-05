@@ -1,10 +1,10 @@
 class Autokbisw < Formula
   desc "Automatic keyboard input source switching for macOS"
   homepage "https://github.com/Kharliux/autokbisw"
-  url "https://github.com/Kharliux/autokbisw/archive/refs/tags/v2.1.0-beta1.tar.gz"
-  version "2.1.0-beta1"
-  sha256 "112f39209ed09300c5cbd3d8dc1de283030e7808804ea49ab25e84f097fb8597"
-  license "MIT"
+  url "https://github.com/Kharliux/autokbisw/archive/refs/tags/v2.1.0-rc1.tar.gz"
+  version "2.1.0-rc1"
+  sha256 "e389064393eb8e6d8a5603f28680476ded9f20245fe9117cb4003fb83b0c2a8e"
+  license "Apache-2.0"
 
   depends_on xcode: ["15.0", :build]
 
