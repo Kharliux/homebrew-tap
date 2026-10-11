@@ -6,8 +6,6 @@ class Autokbisw < Formula
   sha256 "1247eff998d9d8cdd9d7c86fe3e9550b67ebf0c836841e59d405c5b4718e3305"
   license "Apache-2.0"
 
-  depends_on xcode: ["15.0", :build]
-
   def install
     system "swift", "build", "--configuration", "release", "--disable-sandbox"
 
